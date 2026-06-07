@@ -12,7 +12,7 @@ const researchAreas = [
   },
   {
     icon: Users,
-    title: "Family and Institutions,
+    title: "Family and Institutions",
     description: "Studying how institutional messages, family-school relationships, and policy environments structure civic participation and societal belonging.",
   },
   {
