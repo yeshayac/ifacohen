@@ -39,10 +39,10 @@ const Header = () => {
             </Link>
           ))}
           <Button variant="outline" size="sm" className="ml-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
-  <Link to="/cv">
+  <a href={`${import.meta.env.BASE_URL}isaiah-cohen-cv.pdf`} target="_blank" rel="noopener noreferrer">
     <Download className="mr-1.5 h-3.5 w-3.5" />
     CV
-  </Link>
+  </a>
 </Button>
         </nav>
 
@@ -60,22 +60,15 @@ const Header = () => {
       {mobileOpen && (
         <nav className="md:hidden border-t bg-background px-4 pb-4 pt-2 animate-fade-in">
           {navItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              onClick={() => setMobileOpen(false)}
-              className={`block py-2.5 text-sm font-medium transition-colors ${
-                location.pathname === item.path
-                  ? "text-primary"
-                  : "text-muted-foreground"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-          <Link to="/cv" className="block py-2.5 text-sm font-medium text-primary" onClick={() => setMobileOpen(false)}>
+            <a
+  href={`${import.meta.env.BASE_URL}isaiah-cohen-cv.pdf`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block py-2.5 text-sm font-medium text-primary"
+  onClick={() => setMobileOpen(false)}
+>
   Download CV
-</Link>
+</a>
         </nav>
       )}
     </header>
