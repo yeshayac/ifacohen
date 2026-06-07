@@ -8,17 +8,17 @@ const researchAreas = [
   {
     icon: GraduationCap,
     title: "Sociology of Education",
-    description: "Examining how educational institutions shape social stratification, mobility, and identity across diverse populations.",
-  },
-  {
-    icon: Cpu,
-    title: "AI & Society",
-    description: "Investigating the societal implications of artificial intelligence, from algorithmic bias to the transformation of work and learning.",
+    description: "Examining how schools, families, and communities shape educational opportunity, institutional trust, and social inequality.",
   },
   {
     icon: Users,
-    title: "Digital Capital & Technology",
-    description: "Exploring how digital literacy and access to technology reproduce or disrupt existing social inequalities.",
+    title: "Family and Institutions,
+    description: "Studying how institutional messages, family-school relationships, and policy environments structure civic participation and societal belonging.",
+  },
+  {
+    icon: Cpu,
+    title: "Technology, AI, and Society",
+    description: "Investigating public trust in artificial intelligence, digital literacy, and the social consequences of emerging technologies.",
   },
   {
     icon: Gamepad2,
@@ -28,20 +28,35 @@ const researchAreas = [
 ];
 
 const recentWork = [
+    {
+    type: "Journal Article",
+    title: "Sustainable Consumption under Structural Constraint: An Exploratory Mixed Methods Study in Native American Reservation Communities.",
+    venue: "The Journal of Macromarketing, Revising and Resubmitting",
+  },
+    {
+    type: "Journal Article",
+    title: "Schooled at Home…Prepared for College? Educational Pathways and the Transition to Higher Education.",
+    venue: "The Sociological Quarterly, Under Review",
+  },
   {
     type: "Journal Article",
-    title: "Digital Capital and Educational Outcomes: A Multi-Level Analysis",
-    venue: "Sociology of Education, 2025",
+    title: "“Hands Off My School”: Exploring State Regulation of Homeschooling.",
+    venue: "The Journal of Education Policy, Under Review",
   },
   {
-    type: "Working Paper",
-    title: "AI in the Classroom: Teacher Perceptions and Pedagogical Adaptation",
-    venue: "Under Review, 2025",
+    type: "Journal Article",
+    title: "Signals from the School: Do Positive and Negative Messages Shape Family Involvement?",
+    venue: "The Sociological Quarterly, 2026",
   },
   {
-    type: "Book Chapter",
-    title: "Family-School Interaction in the Digital Age",
-    venue: "Handbook of Education and Society, forthcoming",
+    type: "Journal Article",
+    title: "Promoting Student Agency in the Social Sciences with the Digital Unessay.",
+    venue: "Visualizing Objects, Places, and Spaces: A Digital Project Handbook, 2024",
+  },
+  {
+    type: "Journal Article",
+    title: "Promoting Student Agency in the Humanities with the Digital Unessay.",
+    venue: "Visualizing Objects, Places, and Spaces: A Digital Project Handbook, 2024",
   },
 ];
 
