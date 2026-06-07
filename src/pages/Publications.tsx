@@ -3,11 +3,11 @@ import { ChevronDown, ExternalLink } from "lucide-react";
 import Layout from "@/components/Layout";
 
 type Publication = {
-  type: "Peer-Reviewed Article" | "Report, Public Scholarship, and Applied Writing" | "Manuscript Under Review" | "Work in Progress";
+  type: "Peer-Reviewed Article" | "Public Scholarship" | "Report, Public Scholarship, and Applied Writing" | "Manuscript Under Review" | "Work in Progress";
+  category: string;
   title: string;
   citation: string;
-  abstract: string;
-  tags: string[];
+  abstract?: string;
   doi?: string;
 };
 
@@ -66,17 +66,18 @@ const publications = [
 const allTags = ["All", "Education", "Pedagogy", "Health", "Public Scholarship"];
 
 const typeColors: Record<string, string> = {
-  "Journal Article": "text-primary",
-  "Working Paper": "text-muted-foreground",
-  "Book Chapter": "text-muted-foreground",
-  Report: "text-muted-foreground",
+  "Peer-Reviewed Article": "text-primary",
+  "Public Scholarship": "text-muted-foreground",
+  "Report, Public Scholarship, and Applied Writing": "text-muted-foreground",
+  "Manuscript Under Review": "text-muted-foreground",
+  "Work in Progress": "text-muted-foreground",
 };
 
 const Publications = () => {
   const [activeTag, setActiveTag] = useState("All");
   const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
 
-  const filtered = activeTag === "All" ? publications : publications.filter((p) => p.tags.includes(activeTag));
+  const filtered = activeTag === "All" ? publications : publications.filter((p) => p.category === activeTag);
 
   return (
     <Layout>
@@ -123,16 +124,20 @@ const Publications = () => {
                   </a>
                 )}
               </div>
-              <button
-                onClick={() => setExpandedIdx(expandedIdx === idx ? null : idx)}
-                className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground mt-3 transition-colors font-sans"
-              >
-                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${expandedIdx === idx ? "rotate-180" : ""}`} />
-                {expandedIdx === idx ? "Hide abstract" : "Show abstract"}
-              </button>
-              {expandedIdx === idx && (
-                <p className="text-sm text-foreground mt-3 leading-relaxed border-t pt-3">{pub.abstract}</p>
-              )}
+              {pub.abstract && (
+  <>
+    <button
+      onClick={() => setExpandedIdx(expandedIdx === idx ? null : idx)}
+      className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground mt-3 transition-colors font-sans"
+    >
+      <ChevronDown className={`h-3.5 w-3.5 transition-transform ${expandedIdx === idx ? "rotate-180" : ""}`} />
+      {expandedIdx === idx ? "Hide abstract" : "Show abstract"}
+    </button>
+    {expandedIdx === idx && (
+      <p className="text-sm text-foreground mt-3 leading-relaxed border-t pt-3">{pub.abstract}</p>
+    )}
+  </>
+)}
             </div>
           ))}
         </div>
