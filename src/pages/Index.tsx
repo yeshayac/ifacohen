@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen, GraduationCap, Users, Gamepad2, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
-import headshot from "@/assets/headshot.jpeg";
+import headshot from "@/assets/headshot.jpg";
 
 const researchAreas = [
   {
