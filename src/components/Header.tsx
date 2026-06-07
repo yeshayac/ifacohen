@@ -12,6 +12,8 @@ const navItems = [
   { label: "Contact", path: "/contact" },
 ];
 
+const cvUrl = `${import.meta.env.BASE_URL}isaiah-cohen-cv.pdf`;
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
@@ -19,7 +21,10 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="font-serif text-lg font-semibold tracking-tight text-foreground hover:text-primary transition-colors">
+        <Link
+          to="/"
+          className="font-serif text-lg font-semibold tracking-tight text-foreground hover:text-primary transition-colors"
+        >
           Isaiah F. A. Cohen
         </Link>
 
@@ -38,12 +43,18 @@ const Header = () => {
               {item.label}
             </Link>
           ))}
-          <Button variant="outline" size="sm" className="ml-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
-  <a href={`${import.meta.env.BASE_URL}isaiah-cohen-cv.pdf`} target="_blank" rel="noopener noreferrer">
-    <Download className="mr-1.5 h-3.5 w-3.5" />
-    CV
-  </a>
-</Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            className="ml-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            asChild
+          >
+            <a href={cvUrl} target="_blank" rel="noopener noreferrer">
+              <Download className="mr-1.5 h-3.5 w-3.5" />
+              CV
+            </a>
+          </Button>
         </nav>
 
         {/* Mobile toggle */}
@@ -60,15 +71,29 @@ const Header = () => {
       {mobileOpen && (
         <nav className="md:hidden border-t bg-background px-4 pb-4 pt-2 animate-fade-in">
           {navItems.map((item) => (
-            <a
-  href={`${import.meta.env.BASE_URL}isaiah-cohen-cv.pdf`}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block py-2.5 text-sm font-medium text-primary"
-  onClick={() => setMobileOpen(false)}
->
-  Download CV
-</a>
+            <Link
+              key={item.path}
+              to={item.path}
+              onClick={() => setMobileOpen(false)}
+              className={`block py-2.5 text-sm font-medium transition-colors ${
+                location.pathname === item.path
+                  ? "text-primary"
+                  : "text-muted-foreground"
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+
+          <a
+            href={cvUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block py-2.5 text-sm font-medium text-primary"
+            onClick={() => setMobileOpen(false)}
+          >
+            Download CV
+          </a>
         </nav>
       )}
     </header>
