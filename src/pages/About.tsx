@@ -36,25 +36,30 @@ const About = () => (
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-xl font-semibold mb-4 font-sans">Academic Background</h2>
-        <div className="space-y-3">
-          [<div className="border rounded-lg p-4">
-            <p className="font-medium font-sans">Ph.D. in Sociology</p>
-            <p className="text-sm text-muted-foreground">Dissertation: Family Matters. Or Does It? Family Involvement in American Education.</p>
-          </div>
-          <div className="border rounded-lg p-4">
-            <p className="font-medium font-sans">M.A. in Sociology</p>
-          </div>
-          <div className="border rounded-lg p-4">
-            <p className="font-medium font-sans">B.A. in Political Science</p>
-            <p className="text-sm text-muted-foreground">Minor in Sociology</p>
-          </div>
-          div className="border rounded-lg p-4"
-            <p className="font-medium font-sans">A.A. in General Studies</p>
-          </div>]
-        </div>
-      </section>
+     <section className="mb-10">
+  <h2 className="text-xl font-semibold mb-4 font-sans">Academic Background</h2>
+  <div className="space-y-3">
+    <div className="border rounded-lg p-4">
+      <p className="font-medium font-sans">Ph.D. in Sociology</p>
+      <p className="text-sm text-muted-foreground">
+        Dissertation: Family Matters. Or Does It? Family Involvement in American Education.
+      </p>
+    </div>
+
+    <div className="border rounded-lg p-4">
+      <p className="font-medium font-sans">M.A. in Sociology</p>
+    </div>
+
+    <div className="border rounded-lg p-4">
+      <p className="font-medium font-sans">B.A. in Political Science</p>
+      <p className="text-sm text-muted-foreground">Minor in Sociology</p>
+    </div>
+
+    <div className="border rounded-lg p-4">
+      <p className="font-medium font-sans">A.A. in General Studies</p>
+    </div>
+  </div>
+</section>
 
       <section>
         <h2 className="text-xl font-semibold mb-4 font-sans">A Note on Mentoring</h2>
