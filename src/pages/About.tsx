@@ -15,7 +15,7 @@ const About = () => (
           <p className="text-foreground leading-relaxed mb-4">
             My scholarship is rooted in the sociology of education and extends into work on technology, artificial intelligence, gaming, social media, and public life. Across these areas, I study how people encounter institutions, interpret institutional messages, and navigate changing social and technological environments. In investigating these topics, I utilize quantitative, qualitative, and mixed-methods approaches.
           </p>
-           <p className="text-foreground leading-relaxed">
+           <p className="text-foreground leading-relaxed mb-4">
             My teaching emphasizes applied sociological thinking, critical thinking and engagement with evidence, and the use of sociological tools to understand contemporary public issues. I am also committed to public sociology, student mentorship, and community-facing educational programming. At USD, I teach courses introducing sociology to majors and non-majors and on topics like social problems, sociology of pop culture, sociology of gaming, social deviance, research methods, family, law, and sociology of education.
           </p>
           <p className="text-foreground leading-relaxed mb-4">
