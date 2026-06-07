@@ -50,7 +50,7 @@ const About = () => (
             <p className="font-medium font-sans">B.A. in Political Science</p>
             <p className="text-sm text-muted-foreground">Minor in Sociology</p>
           </div>
-          div className="border rounded-lg p-4">
+          div className="border rounded-lg p-4"
             <p className="font-medium font-sans">A.A. in General Studies</p>
           </div>
         </div>
