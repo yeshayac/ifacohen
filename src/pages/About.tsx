@@ -12,13 +12,13 @@ const About = () => (
           <p className="text-foreground leading-relaxed mb-4">
             Dr. Isaiah F. A. Cohen is an Assistant Professor of Sociology at the University of South Dakota. My research and teaching explore how institutions shape opportunity, identity, and belonging, with particular attention to education, family-school relationships, digital culture, public policy, and emerging technologies.
           </p>
-          <p className="text-foreground leading-relaxed">
+          <p className="text-foreground leading-relaxed mb-4">
             My scholarship is rooted in the sociology of education and extends into work on technology, artificial intelligence, gaming, social media, and public life. Across these areas, I study how people encounter institutions, interpret institutional messages, and navigate changing social and technological environments. In investigating these topics, I utilize quantitative, qualitative, and mixed-methods approaches.
           </p>
            <p className="text-foreground leading-relaxed">
             My teaching emphasizes applied sociological thinking, critical thinking and engagement with evidence, and the use of sociological tools to understand contemporary public issues. I am also committed to public sociology, student mentorship, and community-facing educational programming. At USD, I teach courses introducing sociology to majors and non-majors and on topics like social problems, sociology of pop culture, sociology of gaming, social deviance, research methods, family, law, and sociology of education.
           </p>
-          <p className="text-foreground leading-relaxed">
+          <p className="text-foreground leading-relaxed mb-4">
             I am committed to student mentorship, public sociology, and community-facing academic programming. My broader goal as a sociologist is to produce work that is not just analytically rigorous, but publicly useful and attentive to the societal conditions that shape people’s lives.
           </p>
         </div>
