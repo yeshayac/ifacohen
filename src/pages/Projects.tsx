@@ -1,4 +1,3 @@
-```tsx
 import { BrainCircuit, GraduationCap, Home, Globe2, Users, Megaphone } from "lucide-react";
 import Layout from "@/components/Layout";
 
