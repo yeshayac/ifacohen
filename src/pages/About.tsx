@@ -10,7 +10,7 @@ const About = () => (
         <div>
           <h2 className="text-xl font-semibold mb-3 font-sans">Professional Biography</h2>
           <p className="text-foreground leading-relaxed mb-4">
-            Dr. Isaiah F. A. Cohen is an Assistant Professor of Sociology at the University of South Dakota. My research and teaching explore how institutions shape opportunity, identity, and belonging, with particular attention to education, family-school relationships, digital culture, public policy, and emerging technologies.
+            I am an Assistant Professor of Sociology at the University of South Dakota. My research and teaching explore how institutions shape opportunity, identity, and belonging, with particular attention to education, family-school relationships, digital culture, public policy, and emerging technologies.
           </p>
           <p className="text-foreground leading-relaxed mb-4">
             My scholarship is rooted in the sociology of education and extends into work on technology, artificial intelligence, gaming, social media, and public life. Across these areas, I study how people encounter institutions, interpret institutional messages, and navigate changing social and technological environments. In investigating these topics, I utilize quantitative, qualitative, and mixed-methods approaches.

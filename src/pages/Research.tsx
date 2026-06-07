@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, Cpu, Users, Gamepad2, Home } from "lucide-react";
+import { GraduationCap, Cpu, Users, Home, Handshake } from "lucide-react";
 import Layout from "@/components/Layout";
 
 const themes = [
   {
+    icon: GraduationCap,
     title: "Education, Family-School Relationships, and Inequality",
     description:
       "A central strand of my research examines how educational institutions communicate with families, how families interpret and respond to institutional messages, and how these relationships shape educational involvement and outcomes. This work connects questions of family engagement, institutional trust, educational opportunity, and social inequality.",
@@ -14,6 +15,7 @@ const themes = [
     ],
   },
   {
+    icon: Home,
     title: "Educational Governance and Policy",
     description:
       "I also study educational governance and policy variation, including work on homeschool regulation and state-level education policy. This research examines how political, demographic, and institutional contexts shape educational oversight and how policy arrangements reflect broader struggles over authority, family autonomy, public responsibility, and inequality.",
@@ -24,6 +26,7 @@ const themes = [
     ],
   },
   {
+    icon: Cpu,
     title: "Technology and Society",
     description:
       "My recent collaborative work examines public attitudes toward artificial intelligence, including questions of trust, literacy, educational readiness, and perceived social consequences. I am especially interested in how emerging technologies are interpreted by different publics and how technological change intersects with education, inequality, work, and civic life.",
@@ -34,6 +37,7 @@ const themes = [
     ],
   },
   {
+    icon: Users,
     title: "Pedagogical Scholarship and Applied Sociology",
     description:
       "A related strand of my work focuses on pedagogical scholarship, including peer-reviewed writing on course design, student engagement, applied sociology, and the public value of sociological teaching. This work connects my research interests in education, inequality, institutions, and civic life to questions of how students learn to think sociologically and apply sociological tools beyond the classroom.",
@@ -44,6 +48,7 @@ const themes = [
     ],
   },
   {
+    icon: Handshake,
     title: "Public Sociology, Civic Life, and Institutional Belonging",
     description:
       "My public-facing work engages questions of social inequality, antisemitism, civic education, and institutional responsibility. While distinct from my primary empirical research agenda, this work reflects a broader commitment to using sociology to clarify contemporary public issues and support informed civic dialogue.",

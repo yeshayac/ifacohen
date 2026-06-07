@@ -39,11 +39,11 @@ const Header = () => {
             </Link>
           ))}
           <Button variant="outline" size="sm" className="ml-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
-            <a href="/cv">
-              <Download className="mr-1.5 h-3.5 w-3.5" />
-              CV
-            </a>
-          </Button>
+  <Link to="/cv">
+    <Download className="mr-1.5 h-3.5 w-3.5" />
+    CV
+  </Link>
+</Button>
         </nav>
 
         {/* Mobile toggle */}
@@ -73,9 +73,9 @@ const Header = () => {
               {item.label}
             </Link>
           ))}
-          <a href="/cv" className="block py-2.5 text-sm font-medium text-primary">
-            Download CV
-          </a>
+          <Link to="/cv" className="block py-2.5 text-sm font-medium text-primary" onClick={() => setMobileOpen(false)}>
+  Download CV
+</Link>
         </nav>
       )}
     </header>
