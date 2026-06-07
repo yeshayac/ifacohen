@@ -21,9 +21,9 @@ const researchAreas = [
     description: "Investigating public trust in artificial intelligence, digital literacy, and the social consequences of emerging technologies.",
   },
   {
-    icon: Gamepad2,
-    title: "Sociology of Gaming",
-    description: "Studying online gaming communities as sites of identity formation, social interaction, and cultural production.",
+    icon: Handshake,
+    title: "Public and Applied Sociology",
+    description: "Connecting sociological analysis to public life through community-facing education, student research mentorship, and programming on contemporary social issues.",
   },
 ];
 
