@@ -27,7 +27,7 @@ const Teaching = () => (
         <p className="text-foreground leading-relaxed">
           I regularly teach courses serving both sociology majors and students from across the university. These courses include introductory sociology, social problems, social deviance, research methods, sociology of education, sociology of popular culture, and the sociology of gaming. Because many students encounter sociology for the first time in general education courses, I place strong emphasis on helping students connect sociological concepts to lived experience, public debate, professional practice, and institutional life.
         </p>
-        <p className="text-foreground leading-relaxed">
+        <p className="text-foreground leading-relaxed mb-4">
           My teaching also reflects an ongoing interest in pedagogical innovation. I use applied assignments, collaborative work, public-facing analysis, media engagement, and student-led inquiry to help students develop sociological habits of mind. In upper-level courses, I place particular emphasis on research design, interpretation, argumentation, and the ethical use of evidence. My pedagogical work includes peer-reviewed scholarship on the digital unessay, as well as course development around open educational resources, experiential learning, accessibility, and ungrading.
         </p>
       </section>

@@ -1,23 +1,48 @@
-import { Cpu, Users, Lightbulb } from "lucide-react";
+```tsx
+import { BrainCircuit, GraduationCap, Home, Globe2, Users, Megaphone } from "lucide-react";
 import Layout from "@/components/Layout";
 
 const projects = [
   {
-    icon: Cpu,
-    title: "AI & Education Research Lab",
-    description: "An interdisciplinary initiative investigating how artificial intelligence tools are adopted, resisted, and adapted within K-12 and higher education settings. The lab brings together sociologists, computer scientists, and educators.",
-    status: "Active",
+    icon: BrainCircuit,
+    title: "AI, Trust, and Society",
+    description:
+      "A collaborative research project examining public trust in artificial intelligence, AI literacy, educational readiness, and the perceived social consequences of emerging technologies. This work considers how different publics understand, evaluate, and respond to AI across institutional and everyday contexts.",
+    status: "Active Research",
+  },
+  {
+    icon: GraduationCap,
+    title: "Family-School Communication and Educational Inequality",
+    description:
+      "A research strand examining how schools communicate with families and how those messages shape family involvement, institutional trust, and educational participation. This work connects sociology of education, family-school relationships, and broader questions of inequality and institutional belonging.",
+    status: "Active Research",
+  },
+  {
+    icon: Home,
+    title: "Homeschooling, Regulation, and Educational Governance",
+    description:
+      "A policy-focused project studying variation in state homeschool regulation and the political, demographic, and institutional contexts that shape educational oversight. This work examines how debates over schooling, family autonomy, and public responsibility are reflected in state policy environments.",
+    status: "Manuscript Development",
+  },
+  {
+    icon: Globe2,
+    title: "Healthcare Access and Inequality in the Philippines",
+    description:
+      "A student-collaborative project examining how residents in the Philippines experience healthcare access, utilization, and quality. The project focuses on the gap between formal coverage and lived access, with attention to inequality across place, gender, age, and social position.",
+    status: "Data Collection / Development",
   },
   {
     icon: Users,
-    title: "Digital Equity Initiative",
-    description: "A community-engaged research project studying digital access and literacy in rural South Dakota. In partnership with local school districts, we're developing recommendations for closing the digital divide.",
-    status: "Active",
+    title: "Student Research Mentorship",
+    description:
+      "An ongoing commitment to mentoring undergraduate and graduate students through research design, data collection, analysis, conference presentation, and scholarly writing. Student projects have addressed topics including medical inequality, symbolic violence, education, public health, and social institutions.",
+    status: "Ongoing",
   },
   {
-    icon: Lightbulb,
-    title: "Student Research Mentorship Program",
-    description: "A structured mentoring program pairing undergraduate students with ongoing research projects. Students gain hands-on experience in research design, data collection, and scholarly writing.",
+    icon: Megaphone,
+    title: "Public Sociology and Community-Facing Programming",
+    description:
+      "Public-facing academic work focused on bringing sociological analysis into civic and campus conversations. This includes organizing student research events, public lectures, panels, and educational programming on contemporary social issues, including antisemitism, inequality, education, and civic life.",
     status: "Ongoing",
   },
 ];
@@ -25,8 +50,10 @@ const projects = [
 const Projects = () => (
   <Layout>
     <div className="container py-16 max-w-3xl">
-      <h1 className="text-3xl md:text-4xl font-bold mb-3">Projects & Labs</h1>
-      <p className="text-muted-foreground mb-10">Collaborative research initiatives and student engagement.</p>
+      <h1 className="text-3xl md:text-4xl font-bold mb-3">Projects</h1>
+      <p className="text-muted-foreground mb-10">
+        Current research projects, student collaborations, and public-facing academic work.
+      </p>
 
       <div className="space-y-6">
         {projects.map((project) => (
