@@ -3,7 +3,7 @@ import { ChevronDown, ExternalLink } from "lucide-react";
 import Layout from "@/components/Layout";
 
 type Publication = {
-  type: "Journal Article" | "Working Paper" | "Book Chapter" | "Report";
+  type: "Peer-Reviewed Article" | "Report, Public Scholarship, and Applied Writing" | "Manuscript Under Review" | "Work in Progress";
   title: string;
   citation: string;
   abstract: string;
@@ -11,55 +11,59 @@ type Publication = {
   doi?: string;
 };
 
-const publications: Publication[] = [
+const publications = [
   {
-    type: "Journal Article",
-    title: "Digital Capital and Educational Outcomes: A Multi-Level Analysis",
-    citation: "Cohen, I. F. A. (2025). Digital Capital and Educational Outcomes. Sociology of Education, 98(2), 112–134.",
-    abstract: "This study introduces and operationalizes the concept of 'digital capital' to examine how technology-related resources and skills contribute to educational stratification. Using multi-level modeling with a nationally representative dataset, findings reveal that digital capital operates as a distinct form of cultural capital that significantly predicts academic achievement beyond traditional indicators.",
-    tags: ["Education", "Digital Capital"],
-    doi: "https://doi.org/10.xxxx/xxxxx",
+    type: "Peer-Reviewed Article",
+    category: "Education",
+    title: "Signals from the School: Do Positive and Negative Messages Shape Family Involvement?",
+    citation:
+      "Cohen, Isaiah F. A., and Mark Schafer. 2026. “Signals from the School: Do Positive and Negative Messages Shape Family Involvement?” The Sociological Quarterly.",
   },
   {
-    type: "Journal Article",
-    title: "Algorithmic Bias in Educational Assessment: A Critical Review",
-    citation: "Cohen, I. F. A. & Smith, J. (2024). Algorithmic Bias in Educational Assessment. American Sociological Review, 89(4), 567–589.",
-    abstract: "This critical review examines how algorithmic systems used in K-12 and higher education reproduce racial and socioeconomic disparities. We analyze 47 empirical studies and develop a framework for understanding bias at the data, model, and deployment stages.",
-    tags: ["AI & Society", "Education"],
-    doi: "https://doi.org/10.xxxx/xxxxx",
+    type: "Peer-Reviewed Article",
+    category: "Pedagogy",
+    title: "Promoting Student Agency in the Social Sciences with the Digital Unessay",
+    citation:
+      "Cohen, Isaiah F. A., and Christopher Adamson. 2024. “Promoting Student Agency in the Social Sciences with the Digital Unessay.” Visualizing Objects, Places, and Spaces: A Digital Project Handbook.",
   },
   {
-    type: "Working Paper",
-    title: "AI in the Classroom: Teacher Perceptions and Pedagogical Adaptation",
-    citation: "Cohen, I. F. A. (2025). AI in the Classroom: Teacher Perceptions and Pedagogical Adaptation. Under Review.",
-    abstract: "Drawing on 42 in-depth interviews with K-12 teachers, this paper explores how educators perceive, adopt, and resist artificial intelligence tools in their classrooms. The analysis reveals three distinct orientations toward AI: instrumental adoption, critical engagement, and protective resistance.",
-    tags: ["AI & Society", "Education"],
+    type: "Peer-Reviewed Article",
+    category: "Pedagogy",
+    title: "Promoting Student Agency in the Humanities with the Digital Unessay",
+    citation:
+      "Adamson, Christopher, and Isaiah F. A. Cohen. 2024. “Promoting Student Agency in the Humanities with the Digital Unessay.” Visualizing Objects, Places, and Spaces: A Digital Project Handbook.",
   },
   {
-    type: "Book Chapter",
-    title: "Family-School Interaction in the Digital Age",
-    citation: "Cohen, I. F. A. (forthcoming). Family-School Interaction in the Digital Age. In A. Editor (Ed.), Handbook of Education and Society. Publisher.",
-    abstract: "This chapter examines how digital communication platforms have transformed the relationship between families and schools, with implications for parental engagement, teacher workload, and educational equity.",
-    tags: ["Education", "Digital Capital"],
+    type: "Peer-Reviewed Article",
+    category: "Education",
+    title: "How Is Gentrification Associated with Changes in the Academic Performance of Neighborhood Schools?",
+    citation:
+      "Barton, Michael S., and Isaiah F. A. Cohen. 2019. “How Is Gentrification Associated with Changes in the Academic Performance of Neighborhood Schools?” Social Science Research.",
   },
   {
-    type: "Journal Article",
-    title: "Community Governance and Social Hierarchies in Massively Multiplayer Online Games",
-    citation: "Cohen, I. F. A. (2023). Community Governance in MMOs. New Media & Society, 25(8), 1890–1912.",
-    abstract: "Using ethnographic methods within two MMO communities, this study analyzes the formal and informal governance structures that emerge in virtual worlds and how they reproduce or challenge offline social hierarchies.",
-    tags: ["Gaming"],
-    doi: "https://doi.org/10.xxxx/xxxxx",
+    type: "Peer-Reviewed Article",
+    category: "Health",
+    title: "Neighborhood Perception and Self-Rated Health among Mexican American Older Adults",
+    citation:
+      "Stroope, Samuel, Isaiah F. A. Cohen, Joshua Tom, and Kyriakos S. Markides. 2017. “Neighborhood Perception and Self-Rated Health among Mexican American Older Adults.” Geriatrics & Gerontology International.",
   },
   {
-    type: "Report",
-    title: "Digital Equity in South Dakota Schools: A Policy Brief",
-    citation: "Cohen, I. F. A. (2024). Digital Equity in South Dakota Schools. USD Center for Policy Research.",
-    abstract: "This policy brief presents findings from a statewide survey of technology access and digital literacy among K-12 students in South Dakota, with recommendations for closing digital divides in rural communities.",
-    tags: ["Education", "Digital Capital"],
+    type: "Peer-Reviewed Article",
+    category: "Education",
+    title: "The Impact of Homeschooling on the Adjustment of College Students",
+    citation:
+      "Drenovsky, Cynthia K., and Isaiah F. A. Cohen. 2012. “The Impact of Homeschooling on the Adjustment of College Students.” International Social Science Review.",
+  },
+  {
+    type: "Public Scholarship",
+    category: "Education",
+    title: "Homeschooling Grows in Louisiana and the United States",
+    citation:
+      "Schafer, Mark J., and Isaiah F. A. Cohen. 2017. “Homeschooling Grows in Louisiana and the United States.” LSU AgCenter.",
   },
 ];
 
-const allTags = ["All", "Education", "AI & Society", "Digital Capital", "Gaming"];
+const allTags = ["All", "Education", "Pedagogy", "Health", "Public Scholarship"];
 
 const typeColors: Record<string, string> = {
   "Journal Article": "text-primary",
