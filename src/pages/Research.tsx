@@ -4,34 +4,54 @@ import Layout from "@/components/Layout";
 
 const themes = [
   {
-    icon: GraduationCap,
-    title: "Sociology of Education",
-    description: "My primary research agenda examines how educational institutions perpetuate or mitigate social inequality. I investigate the mechanisms through which schools, colleges, and universities shape life chances across race, class, and gender lines.",
-    projects: ["Multi-level analysis of school climate and academic outcomes", "Longitudinal study of first-generation college students"],
+    title: "Education, Family-School Relationships, and Inequality",
+    description:
+      "A central strand of my research examines how educational institutions communicate with families, how families interpret and respond to institutional messages, and how these relationships shape educational involvement and outcomes. This work connects questions of family engagement, institutional trust, educational opportunity, and social inequality.",
+    projects: [
+      "Family-school communication and elementary educational outcomes",
+      "Institutional messages, family involvement, and educational participation",
+      "Educational inequality, family engagement, and school-community relationships",
+    ],
   },
   {
-    icon: Cpu,
-    title: "AI & Society",
-    description: "I study the social implications of artificial intelligence in education and beyond. This includes how teachers perceive and adopt AI tools, how algorithmic systems reproduce bias, and the broader cultural narratives surrounding automation.",
-    projects: ["AI in the Classroom project (ongoing)", "Survey of faculty AI adoption across disciplines"],
+    title: "Educational Governance and Policy",
+    description:
+      "I also study educational governance and policy variation, including work on homeschool regulation and state-level education policy. This research examines how political, demographic, and institutional contexts shape educational oversight and how policy arrangements reflect broader struggles over authority, family autonomy, public responsibility, and inequality.",
+    projects: [
+      "State variation in homeschool regulation",
+      "Education policy, political context, and institutional oversight",
+      "School choice, governance, and educational inequality",
+    ],
   },
   {
-    icon: Users,
-    title: "Digital Capital & Technology",
-    description: "Building on Bourdieu's capital framework, I theorize 'digital capital' as a distinct resource that shapes educational and economic outcomes. My work examines how unequal access to technology and digital skills compounds existing forms of inequality.",
-    projects: ["Digital capital measurement instrument development", "Cross-national comparison of digital inequality"],
+    title: "Technology and Society",
+    description:
+      "My recent collaborative work examines public attitudes toward artificial intelligence, including questions of trust, literacy, educational readiness, and perceived social consequences. I am especially interested in how emerging technologies are interpreted by different publics and how technological change intersects with education, inequality, work, and civic life.",
+    projects: [
+      "Public trust and literacy regarding artificial intelligence",
+      "AI, education, and institutional readiness",
+      "User-developer distance and public attitudes toward emerging technologies",
+    ],
   },
   {
-    icon: Home,
-    title: "Family & Social Institutions",
-    description: "I explore the evolving relationship between families and schools, particularly how digital communication platforms transform parental engagement, teacher-parent dynamics, and educational decision-making.",
-    projects: ["Parent communication platforms and school engagement", "COVID-era remote learning and family dynamics"],
+    title: "Pedagogical Scholarship and Applied Sociology",
+    description:
+      "A related strand of my work focuses on pedagogical scholarship, including peer-reviewed writing on course design, student engagement, applied sociology, and the public value of sociological teaching. This work connects my research interests in education, inequality, institutions, and civic life to questions of how students learn to think sociologically and apply sociological tools beyond the classroom.",
+    projects: [
+      "Experiential Learning",
+      "Ungrading and experimental pedagogy",
+      "Open educational resources and digital culture",
+    ],
   },
   {
-    icon: Gamepad2,
-    title: "Sociology of Gaming",
-    description: "Online gaming communities serve as rich sites for sociological inquiry. I study identity construction, social hierarchies, and cultural production within multiplayer gaming environments.",
-    projects: ["Community governance in MMO environments", "Gender and identity in esports"],
+    title: "Public Sociology, Civic Life, and Institutional Belonging",
+    description:
+      "My public-facing work engages questions of social inequality, antisemitism, civic education, and institutional responsibility. While distinct from my primary empirical research agenda, this work reflects a broader commitment to using sociology to clarify contemporary public issues and support informed civic dialogue.",
+    projects: [
+      "Gaming communities and identity formation",
+      "Digital interaction, overstimulation, and social media use",
+      "Digital culture as a site of social life and inequality",
+    ],
   },
 ];
 
@@ -40,7 +60,7 @@ const Research = () => (
     <div className="container py-16 max-w-3xl">
       <h1 className="text-3xl md:text-4xl font-bold mb-3">Research</h1>
       <p className="text-muted-foreground mb-12 leading-relaxed">
-        My research bridges sociology of education, science & technology studies, and digital culture. Below are the major themes guiding my current and ongoing work.
+        My research examines how institutions, technologies, and policy environments shape access, opportunity, trust, and social life. While my work spans several substantive areas, it is organized around a common concern: how people encounter institutions, interpret institutional messages, and navigate social systems that structure access, belonging, and participation.
       </p>
 
       <div className="space-y-12">
