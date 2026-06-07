@@ -81,7 +81,7 @@ const Index = () => (
             Assistant Professor of Sociology · University of South Dakota
           </p>
           <p className="text-base text-muted-foreground italic mb-6 font-serif">
-            Researching education, technology, and society.
+            Researching education, family, technology, and public life.
           </p>
           <p className="text-foreground leading-relaxed mb-8 max-w-xl">
             I study how technology reshapes educational institutions and social inequality. My work bridges sociology of education, digital culture, and emerging AI technologies to understand how people learn, connect, and navigate an increasingly digital world.
