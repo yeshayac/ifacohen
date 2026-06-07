@@ -1,5 +1,4 @@
-name: Build site and deploy to GitHub Pages
-run: npm run build -- --base=/ifacohen/
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -31,7 +30,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build site
         run: npm run build -- --base=/ifacohen/
