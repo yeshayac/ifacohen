@@ -7,6 +7,7 @@ type Resource = {
   description: string;
   status?: string;
   link?: string;
+  videoEmbedUrl?: string;
 };
 
 type ResourceSection = {
@@ -72,11 +73,13 @@ const sections: ResourceSection[] = [
       "Films, episodes, games, and digital artifacts I use to help students apply sociological concepts to contemporary culture, institutions, and public life.",
     resources: [
       {
-        title: "Media and Moral Boundaries",
-        course: "SOC 402/502: Social Deviance",
+        title: "Why I, as a black man, attend KKK rallies. | Daryl Davis | TEDxNaperville",
+        course: "SOC 100: Introduction to Sociology",
         description:
-          "Selected media used to examine deviance, stigma, social control, moral panic, symbolic violence, and the construction of social problems.",
-        status: "Annotated list forthcoming",
+          "Selected media used to illustrate intersecting concepts from symbolic interactionism, sociological research methods, and civic dialogue.",
+        status: "Publicly available video",
+        videoEmbedUrl: "https://www.youtube.com/watch?v=ORp3q1Oaezw"
+
       },
       {
         title: "Digital Culture and Social Interaction",
@@ -204,10 +207,22 @@ const TeachingResources = () => (
                     <p className="text-xs text-muted-foreground mt-3 italic">
                       {resource.status}
                     </p>
-                  )}
+                  )} 
                 </div>
               ))}
             </div>
+            {resource.videoEmbedUrl && (
+            <div className="mt-4 aspect-video overflow-hidden rounded-md border bg-muted">
+                <iframe
+                src={resource.videoEmbedUrl}
+                title={resource.title}
+                className="h-full w-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                loading="lazy"
+                    />
+                </div>
+)}
           </section>
         ))}
       </div>
