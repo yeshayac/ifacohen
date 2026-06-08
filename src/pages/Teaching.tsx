@@ -1,4 +1,5 @@
 import { BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 
 const courses = [
