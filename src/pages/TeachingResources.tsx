@@ -82,11 +82,12 @@ const sections: ResourceSection[] = [
 
       },
       {
-        title: "Digital Culture and Social Interaction",
-        course: "Sociology of Gaming / Sociology of Popular Culture",
+        title: "Key & Peele - Text Message Confusion - Uncensored",
+        course: "SOC 150: Social Problems / SOC 392: Sociology of Popular Culture",
         description:
-          "Examples used to explore identity, community, overstimulation, platform life, gaming cultures, and technologically mediated interaction.",
-        status: "Annotated list forthcoming",
+          "Selected media used to illustrate challenges of interpersonal communication without common nonverbal signals found in in-person conversations and over the phone.",
+        status: "Publicly available video",
+        videoEmbedUrl: "https://www.youtube.com/embed/naleynXS7yo",
       },
     ],
   },
