@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Research from "./pages/Research";
 import Publications from "./pages/Publications";
 import Teaching from "./pages/Teaching";
+import TeachingResources from "./pages/TeachingResources";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import CV from "./pages/CV";
