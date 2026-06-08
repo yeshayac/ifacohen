@@ -55,6 +55,18 @@ const Teaching = () => (
         </p>
       </section>
     </div>
+    <div className="mt-10 border rounded-lg p-5 bg-card">
+  <h2 className="text-lg font-semibold font-sans mb-2">Teaching Resources</h2>
+  <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+    Selected assignments, course media, unessay materials, and pedagogical resources are collected on a separate resources page.
+  </p>
+  <Link
+    to="/teaching-resources"
+    className="text-primary hover:underline text-sm font-medium font-sans"
+  >
+    View teaching resources →
+  </Link>
+</div>
   </Layout>
 );
 

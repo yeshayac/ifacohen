@@ -131,7 +131,7 @@ const publications: Publication[] = [
     category: "Health",
     title: "Coverage ≠ Utilization ≠ Quality: Intersectional Inequalities in Healthcare Access in the Philippines.",
     citation:
-      "Pena, Cerise and Isaiah F. A. Cohen. “Coverage ≠ Utilization ≠ Quality: Intersectional Inequalities in Healthcare Access in the Philippines.” Collaborative manuscript in development.",
+      "Peña, Cerise and Isaiah F. A. Cohen. “Coverage ≠ Utilization ≠ Quality: Intersectional Inequalities in Healthcare Access in the Philippines.” Collaborative manuscript in development.",
   },
 ];
 
