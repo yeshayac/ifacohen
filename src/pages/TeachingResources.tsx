@@ -78,7 +78,7 @@ const sections: ResourceSection[] = [
         description:
           "Selected media used to illustrate intersecting concepts from symbolic interactionism, sociological research methods, and civic dialogue.",
         status: "Publicly available video",
-        videoEmbedUrl: "https://www.youtube.com/embed/ORp3q1Oaezw"
+        videoEmbedUrl: "https://www.youtube.com/embed/ORp3q1Oaezw",
 
       },
       {
@@ -145,7 +145,6 @@ const TeachingResources = () => (
       </div>
 
       <div className="space-y-10">
-              <div className="space-y-10">
         {sections.map((section) => (
           <section key={section.title} className="border rounded-lg p-6">
             <div className="flex items-start gap-3 mb-5">
