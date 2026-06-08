@@ -78,7 +78,7 @@ const sections: ResourceSection[] = [
         description:
           "Selected media used to illustrate intersecting concepts from symbolic interactionism, sociological research methods, and civic dialogue.",
         status: "Publicly available video",
-        videoEmbedUrl: "https://www.youtube.com/watch?v=ORp3q1Oaezw"
+        videoEmbedUrl: "https://www.youtube.com/embed/ORp3q1Oaezw"
 
       },
       {
@@ -161,72 +161,68 @@ const TeachingResources = () => (
 
             <div className="space-y-4">
               {section.resources.map((resource) => (
-                <div key={resource.title} className="border rounded-md p-4 bg-background">
-                  <div className="flex items-start justify-between gap-3">
-                    <div>
-                      <h3 className="font-medium font-sans">
-                        {resource.link ? (
-                          <a
-                            href={resource.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-primary hover:underline"
-                          >
-                            {resource.title}
-                          </a>
-                        ) : (
-                          resource.title
-                        )}
-                      </h3>
+  <div key={resource.title} className="border rounded-md p-4 bg-background">
+    <div className="flex items-start justify-between gap-3">
+      <div>
+        <h3 className="font-medium font-sans">
+          {resource.link ? (
+            <a
+              href={resource.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary hover:underline"
+            >
+              {resource.title}
+            </a>
+          ) : (
+            resource.title
+          )}
+        </h3>
 
-                      {resource.course && (
-                        <p className="text-xs text-primary mt-1 font-medium font-sans">
-                          {resource.course}
-                        </p>
-                      )}
-                    </div>
-
-                    {resource.link && (
-                      <a
-                        href={resource.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary hover:text-primary/80 flex-shrink-0"
-                        aria-label={`${resource.title} external link`}
-                      >
-                        <ExternalLink className="h-4 w-4" />
-                      </a>
-                    )}
-                  </div>
-
-                  <p className="text-sm text-foreground mt-3 leading-relaxed">
-                    {resource.description}
-                  </p>
-
-                  {resource.status && (
-                    <p className="text-xs text-muted-foreground mt-3 italic">
-                      {resource.status}
-                    </p>
-                  )} 
-                </div>
-              ))}
-            </div>
-            {resource.videoEmbedUrl && (
-            <div className="mt-4 aspect-video overflow-hidden rounded-md border bg-muted">
-                <iframe
-                src={resource.videoEmbedUrl}
-                title={resource.title}
-                className="h-full w-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                loading="lazy"
-                    />
-                </div>
-)}
-          </section>
-        ))}
+        {resource.course && (
+          <p className="text-xs text-primary mt-1 font-medium font-sans">
+            {resource.course}
+          </p>
+        )}
       </div>
 
+      {resource.link && (
+        <a
+          href={resource.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:text-primary/80 flex-shrink-0"
+          aria-label={`${resource.title} external link`}
+        >
+          <ExternalLink className="h-4 w-4" />
+        </a>
+      )}
+    </div>
+
+    <p className="text-sm text-foreground mt-3 leading-relaxed">
+      {resource.description}
+    </p>
+
+    {resource.status && (
+      <p className="text-xs text-muted-foreground mt-3 italic">
+        {resource.status}
+      </p>
+    )}
+
+    {resource.videoEmbedUrl && (
+      <div className="mt-4 aspect-video overflow-hidden rounded-md border bg-muted">
+        <iframe
+          src={resource.videoEmbedUrl}
+          title={resource.title}
+          className="h-full w-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          loading="lazy"
+        />
+      </div>
+    )}
+  </div>
+))}
       <div className="mt-10 border rounded-lg p-5 bg-card">
         <h2 className="text-lg font-semibold font-sans mb-2">Student Work and Permissions</h2>
         <p className="text-sm text-muted-foreground leading-relaxed">
