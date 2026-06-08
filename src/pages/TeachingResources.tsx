@@ -24,25 +24,44 @@ const sections: ResourceSection[] = [
       "Selected assignments and course materials that illustrate my approach to applied, public-facing, and analytically rigorous sociology instruction.",
     resources: [
       {
-        title: "The Sociological Unessay",
-        course: "SOC 150 / upper-division sociology courses",
+        title: "Unessay",
+        course: "SOC 100 / lower- & upper-division sociology courses",
         description:
-          "An open-format project that asks students to demonstrate sociological understanding through creative, public-facing, or applied work rather than a conventional paper alone.",
-        status: "Sample assignment framework forthcoming",
+          "An open-format project that asks students to demonstrate sociological understanding through creative work rather than a conventional paper alone.",
+        status: "PDF",
+        link: `${import.meta.env.BASE_URL}Teaching Resources/Unessay.pdf`,
+      },
+        {
+        title: "Problem Solving Project",
+        course: "SOC 150: Social Problems",
+        description:
+          "Each group of students prepare a poster in electronic form on a sociological issue/problem, its effects on society, and their efforts toward addressing it in the community as a group.",
+        status: "PDF",
+        link: `${import.meta.env.BASE_URL}Teaching Resources/Problem Solving Project.pdf`,
       },
       {
-        title: "Research Design Workshop Materials",
-        course: "SOC 410: Methods of Social Research",
+        title: "Game Creation Collaborative Project",
+        course: "SOC 392: Sociology of Gaming",
         description:
-          "Materials used to guide students through the process of moving from a broad sociological interest to a feasible research question, design, and evidence strategy.",
-        status: "Selected materials forthcoming",
+          "Students are split into pairs (possibly one trio) for the final project of the semester. Each pair will design a game to express a sociological concept/topic/problem and its impact on society.",
+        status: "PDF",
+        link: `${import.meta.env.BASE_URL}Teaching Resources/Game Creation Collaborative Project.pdf`,
       },
       {
-        title: "Debate and Position Memo Assignments",
+        title: "Trial in the Court of Public Opinion",
         course: "SOC 402/502: Social Deviance",
         description:
-          "Structured assignments that ask students to analyze contested social issues from multiple theoretical, political, and institutional perspectives.",
-        status: "Selected examples forthcoming",
+          "Students work in collaborative circles to prepare a presentation on a deviant behavior of your choice and explain the behavior, societal perceptions of this behavior, its impact on society, and (most importantly) make a case for why we should normalize it. These presentations are open to the public and can be done using PowerPoint or other methods. Asynchronous students accomplish this through a Reddit AMA (Ask Me Anything).",
+        status: "PDF",
+        link: `${import.meta.env.BASE_URL}Teaching Resources/Trial in the Court of Public Opinion.pdf`,
+      },
+      {
+        title: "Education Immersion",
+        course: "SOC 480/590: Sociology of Education",
+        description:
+          "Students spend no less than twenty hours this semester shadowing an educator at either the elementary, middle, or high school level. As they do this, they observe the manner in which material is presented, modalities through which material is delivered, how knowledge is assessed, identifying instructional strategies, teacher-student interactions, student-student interactions, student-teacher interactions, and more. Once students have completed their observation hours, they will craft a reflection and analysis paper through which they will discuss their observations, interrelate concepts we have discussed over the course of the semester, and provide reflections on their experiences (7-8 page minimum).",
+        status: "PDF",
+        link: `${import.meta.env.BASE_URL}Teaching Resources/Education Immersion.pdf`,
       },
     ],
   },
