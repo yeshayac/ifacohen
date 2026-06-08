@@ -85,7 +85,7 @@ const sections: ResourceSection[] = [
         title: "Key & Peele - Text Message Confusion - Uncensored",
         course: "SOC 150: Social Problems / SOC 392: Sociology of Popular Culture",
         description:
-          "Selected media used to illustrate challenges of interpersonal communication without common nonverbal signals found in in-person conversations and over the phone.",
+          "Selected media used to illustrate challenges of interpersonal communication without common nonverbal signals found in in-person, video call, and telephone conversations.",
         status: "Publicly available video",
         videoEmbedUrl: "https://www.youtube.com/embed/naleynXS7yo",
       },
