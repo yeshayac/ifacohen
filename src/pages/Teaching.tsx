@@ -25,7 +25,7 @@ const Teaching = () => (
         <p className="text-foreground leading-relaxed mb-4">
           My teaching is grounded in the belief that sociology is most powerful when students learn to use it as a way of seeing, questioning, and analyzing the social world. Across my courses, I emphasize conceptual clarity, evidence-based reasoning, applied sociological analysis, and the connection between classroom learning and contemporary public issues.
         </p>
-        <p className="text-foreground leading-relaxed">
+        <p className="text-foreground leading-relaxed mb-4">
           I regularly teach courses serving both sociology majors and students from across the university. These courses include introductory sociology, social problems, social deviance, research methods, sociology of education, sociology of popular culture, and the sociology of gaming. Because many students encounter sociology for the first time in general education courses, I place strong emphasis on helping students connect sociological concepts to lived experience, public debate, professional practice, and institutional life.
         </p>
         <p className="text-foreground leading-relaxed mb-4">
